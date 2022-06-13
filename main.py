@@ -96,12 +96,7 @@ if show2:
     f"""{num_of_countries} - количество разных стран, откуда происходят респонденты. Приведем пример пары таких стран:"""
     for i in range(4):
         st.write(all_the_countries[i])
-
-    """С этого момента начинается работа с API"""
-    """Первое, что мы сделаем - найдем с помощью библиотеки countryinfo столицы этих стран и выделим для этого отдельную табличку"""
-    from countryinfo import CountryInfo #здесь в requirements добавим еще countryinfo
-    capitals_df = pd.DataFrame()
-    st.write(all_the_countries)
+    """Продолжение в питоновском ноутбуке"""
 
 show3 = st.sidebar.checkbox("Использование geopandas + sql")
 st.title("Использование geopandas для более наглядной визуализации")
